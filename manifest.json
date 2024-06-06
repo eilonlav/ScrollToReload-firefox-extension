@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Scroll to Reload",
+    "version": "1.0",
+    "description": "Refreshes the page when you scroll up at the top.",
+    "permissions": [
+      "tabs",
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
